@@ -38,7 +38,8 @@ def number_check(n):
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def number_template(n):
-    """ render template to GET request, path in /number_template/<var> if int """
+    """ render template by GET request, path in /number_template/<var> if int
+    """
     return render_template('5-number.html', n=n)
 
 
